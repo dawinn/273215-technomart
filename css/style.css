@@ -1,0 +1,17 @@
+body {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PTSans","Arial",sans-serif;
+}
+h1,h2,h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  font-family: "Cuprum","Arial",sans-serif;
+}
+h3 {
+  font-size: 36px;
+}
