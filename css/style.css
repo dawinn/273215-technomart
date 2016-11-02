@@ -12,6 +12,470 @@ h1,h2,h3 {
   text-transform: uppercase;
   font-family: "Cuprum","Arial",sans-serif;
 }
+h2 {
+    font-weight: normal;
+}
+
 h3 {
   font-size: 36px;
+}
+
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.clearfix::after,
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper-bg-darkblue {
+  background-color: #293449;
+}
+
+.main-header .wrapper-bg-darkblue {
+    height: 42px;
+}
+.wrapper-bg-lightblue {
+  background-color: #f1f5f7;
+}
+.wrapper-bg-light {
+
+}
+.wrapper-bg-blue {
+  background-color: #32425c;
+}
+.col-x3 > div,
+.col-x3 > section {
+  width: 300px;
+  float: left;
+  margin-right:20px;
+}
+.col-x3 div:nth-child(3n) {
+  margin-right: 0;
+}
+
+/*===========================================================
+ Шапка
+============================================================*/
+.main-header .logo {
+  position: absolute;
+  z-index: 10;
+}
+.search {
+  float: left;
+  margin-left: 220px;
+  width: 270px;
+}
+.bookmarks,
+.cart-widget,
+.btn-order {
+  float: right;
+}
+.main-menu {
+  float: none;
+  width: 940px;
+  min-height: 60px;
+
+  background-color: #32425c;
+  box-shadow: inset 0 -5px  0 0 #293449;
+
+  clear: both;
+  margin-bottom: 60px;
+}
+
+.main-menu ul {
+  list-style: none;
+}
+.main-menu li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu a {
+  color: white;
+}
+
+.tagline,
+.contact,
+.auth-block {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+/*===========================================================
+ Promo-block
+============================================================*/
+.promo-block {
+  padding-top: 58px;
+  margin-bottom: 33px;
+}
+
+.promo-block::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.promo-block h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: inherit;
+  color: white;
+}
+
+.promo-item {
+  width: 276px;
+  height: 123px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  padding-left: 24px;
+
+
+  /* показывает сетку */
+  background: rgba(51, 146, 67, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(51, 146, 67);
+
+}
+.promo-item:nth-child(3) {
+  margin-left: 0;
+}
+
+.slider {
+  width: 596px;
+  height: 266px;
+  float: left;
+  position: relative;
+  margin-left: 0;
+}
+
+.slider a {
+  display: block;
+  position: absolute;
+  top: 1px;
+}
+.slider-list {
+  margin-left:-64px;
+
+  font-size: 0;
+}
+.slider-list figcaption {
+  position: absolute;
+  font-size: 24px;
+
+  color: white;
+}
+
+/*===========================================================
+ viewed
+============================================================*/
+
+.viewed h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 30px;
+
+  background-color: #f7f3ec;
+}
+
+.viewed .btn {
+  float: right;
+  margin-top: -78px;
+  margin-right: 23px;
+}
+
+.producers-block {
+  margin-bottom: 68px;
+}
+
+.popgoods-item,
+.producers-item {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  box-shadow: inset 0 0 0 1px #e5e5e5;
+}
+
+.popgoods-item {
+  /* для построения сетки
+  для отладки отступов */
+  min-height: 316px;
+}
+
+.producers-item {
+  height: 144px;
+}
+
+.viewed .popgoods-item:nth-child(4n),
+.viewed .producers-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/*===========================================================
+ services-block
+============================================================*/
+.services-block {
+  padding: 55px 0;
+}
+
+.services-block h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 26px;
+}
+
+.services-pretext {
+  padding-bottom: 27px;
+}
+.services-pretext p {
+  margin:0;
+  padding:0;
+}
+.services-list {
+  width: 240px;
+}
+
+.services-list {
+  width: 240px;
+  height: 272px;
+  float: left;
+
+  /* показывает сетку */
+  background: rgba(51, 146, 67, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(51, 146, 67);
+
+}
+
+
+.services-content {
+  width: 380px;
+  float:left;
+  margin-left: 80px;
+
+  /* показывает сетку */
+  background: rgba(51, 146, 67, 0.2);
+
+}
+.service-content-2,
+.service-content-3 {
+  display: none;
+}
+
+/*===========================================================
+ company-info
+============================================================*/
+
+.company-info {
+  padding-top: 80px;
+  padding-bottom: 85px;
+
+  min-height: 370px;
+}
+.company-info h2 {
+  margin: 0;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.about {
+  width: 540px;
+  float: left;
+}
+
+.contacts {
+  width: 300px;
+  float: right;
+}
+
+/*===========================================================
+ Подвал
+============================================================*/
+.main-footer {
+  color: white;
+}
+.main-footer ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.main-footer p {
+  margin: 0;
+}
+
+.main-footer .logo {
+  float: left;
+  width: 220px;
+  height: 68px;
+}
+.footer-menu-1,
+.footer-menu-2 {
+  float: right;
+  width: 560px;
+
+  text-align: right;
+  font-size: 18px;
+  /* TODO: убрать после корректной стилизации  меню */
+  min-height: 68px;
+}
+
+.footer-menu-1::after,
+.footer-menu-2::after {
+  content: "";
+  clear: both;
+}
+
+.footer-menu-1 li,
+.footer-menu-2 li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-menu-1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-menu-2 a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-contacts {
+  width: 380px;
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 53px;
+}
+
+.footer-copyright,
+.footer-social,
+ .feedback-link{
+   padding-top: 37px;
+   padding-bottom: 34px;
+}
+ .feedback-link {
+  width: 140px;
+  display: inline-block;
+}
+
+/*===========================================================
+ Внутренная страница
+============================================================*/
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+
+  background-color: #f2f6f8;
+}
+
+.filter-widget {
+  width: 220px;
+  float:left;
+}
+
+.filter-widget h3,
+.sort h3 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.sort a {
+  position: relative;
+  top: -32px;
+  left: 150px;
+}
+.content-page {
+  width: 700px;
+  float: right;
+}
+.content-page .popgoods-item:nth-child(3n) {
+  margin-right: 0;
+}
+.content-page .popgoods-list {
+  margin-bottom: 50px;
+}
+
+.pagination a {
+
+  padding: 13px;
+  box-shadow: inset 0 0 0 1px #e5e5e5;
+}
+/*===========================================================
+ Системное оформление - не изменять взято из демки вебинара
+============================================================*/
+/*
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
+}
+
+body > * > * > * > *{
+  background: rgba(158, 224, 169, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(158, 224, 169);
+
+}
+
+body > * > * > * > *::before {
+  color: black;
+
+  background: rgb(158, 224, 169);
 }

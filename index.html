@@ -10,22 +10,22 @@
         <div class="wrapper-bg-darkblue">
           <div class="container">
             <div class="logo">
-              Техномарт
+              <img src="img/logo.png" width="220" height="47" alt="">
             </div>
             <form class="search" action="" method="post">
               <input type="search" name="search-str" placeholder="Поиск:" >
             </form>
-            <div class="bookmarks">
-              Закладки: 0
-            </div>
+            <a class="btn-order" href="#">Оформить заказ</a>
             <div class="cart-widget">
               Корзина: 0
             </div>
-            <a class="btn-order" href="#">Оформить заказ</a>
+            <div class="bookmarks">
+              Закладки: 0
+            </div>
           </div>
         </div>
         <div class="wrapper-bg-lightblue">
-          <div class="container">
+          <div class="container col-x3">
             <div class="tagline">
               <p>
                 Интернет-магазин строительных материалов и инструментов для ремонта
@@ -74,42 +74,49 @@
       <main>
         <div class="wrapper-bg-light">
           <div class="container">
-            <section class="promo-block">
+            <section class="promo-block clearfix">
               <div class="promo-item material new">
-                <div>Материалы</div>
+                <h3>Материалы</h3>
                 <a href="#">На любой вкус</a>
               </div>
               <div class="promo-item instrument">
-                <div>Инструмент</div>
+                <h3>Инструмент</h3>
                 <a href="#">На все случаи</a>
               </div>
               <div class="promo-item equipment">
-                <div>Техника</div>
+                <h3>Техника</h3>
                 <a href="#">Для стройки</a>
-              </div>
-              <div class="promo-item discounts">
-                <div>Скидки 50%</div>
-                <a href="#">На 350 товаров</a>
-              </div>
-              <div class="promo-item delivery">
-                <div>Доставка</div>
-                <a href="#">Бесплатно</a>
               </div>
               <div class="promo-item slider">
                 <!-- TODO: Тут будет слайдер -->
                 <div class="slider-list">
                   <figure>
-                    <img src="http://placehold.it/620x264" width="620" height="264" alt="" >
+                    <figcaption>
+                      <h3>Перфораторы</h3>
+                      <p>настоящие мужские игрушки</p>
+                      <a href="#">Открыть каталог</a>
+                    </figcaption>
+                    <img src="img/slide-1.jpg" width="620" height="266" alt="" >
                   </figure>
+
                 </div>
                 <a class="prev" href="#">Назад</a>
                 <a class="next" href="#">Вперед</a>
               </div>
+              <div class="promo-item discounts">
+                <h3>Скидки 50%</h3>
+                <a href="#">На 350 товаров</a>
+              </div>
+              <div class="promo-item delivery">
+                <h3>Доставка</h3>
+                <a href="#">Бесплатно</a>
+              </div>
+
             </section>
-            <section class="popgoods-block">
+            <section class="popgoods-block viewed">
               <h2>Популярные товары:</h2>
-              <a href="#">Все популярные товары</a>
-              <section class="popgoods-list">
+              <a class="btn" href="#">Все популярные товары</a>
+              <section class="popgoods-list clearfix">
                 <section class="popgoods-item">
                   <img src="http://placehold.it/206x152" width="206" height="152" alt="Перфоратор BOSCH BFG 9000">
                   <p>
@@ -151,132 +158,136 @@
                 </section>
               </section>
             </section>
-            <section class="producers-block">
+            <section class="producers-block viewed">
               <h2>Популярные производители:</h2>
-              <a href="#">Все производители</a>
-              <section class="producers-list">
+              <a class="btn" href="#">Все производители</a>
+              <section class="producers-list clearfix">
                 <div class="producers-item">
                   <a href="#">
                     <img src="http://placehold.it/130x50" width="130" height="50" alt="Bosch" >
                   </a>
                 </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="Makita" >
+                  </a>
+                </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="DeWalt" >
+                  </a>
+                </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="Интерскол" >
+                  </a>
+                </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="HITACHI" >
+                  </a>
+                </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="LG" >
+                  </a>
+                </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="AEG" >
+                  </a>
+                </div>
+                <div class="producers-item">
+                  <a href="#">
+                    <img src="http://placehold.it/130x50" width="130" height="50" alt="Metabo" >
+                  </a>
+                </div>
               </section>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="Makita" >
-                </a>
-              </div>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="DeWalt" >
-                </a>
-              </div>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="Интерскол" >
-                </a>
-              </div>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="HITACHI" >
-                </a>
-              </div>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="LG" >
-                </a>
-              </div>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="AEG" >
-                </a>
-              </div>
-              <div class="producers-item">
-                <a href="#">
-                  <img src="http://placehold.it/130x50" width="130" height="50" alt="Metabo" >
-                </a>
-              </div>
             </section>
           </div>
         </div>
         <div class="wrapper-bg-lightblue">
-          <div class="container">
-              <div class="services-block">
-                <h2>Сервисы</h2>
-                <p>
-                  Хороший интерент-магазин отличается от плохого не только ценами!
-                </p>
-                <p>
-                  Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-                </p>
-                <div class="services-list">
-                    <input type="radio" name="service-item" id="service-1" checked="checked">
-                    <label for="service-1">Доставка</label>
-                    <input type="radio" name="service-item" id="service-2">
-                    <label for="service-2">Гарантия</label>
-                    <input type="radio" name="service-item" id="service-3">
-                    <label for="service-3">Кредит</label>
+          <div class="container services-block">
+            <h2>Сервисы</h2>
+            <div class="services-pretext">
+              <p>
+                Хороший интерент-магазин отличается от плохого не только ценами!
+              </p>
+              <p>
+                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+              </p>
+            </div>
+            <div class="services-list">
+                <div>
+                  <input type="radio" name="service-item" id="service-1" checked="checked">
+                  <label for="service-1">Доставка</label>
                 </div>
-                <div class="services-content">
-                  <div class="show service-content-1">
-                    <h3>Доставка</h3>
-                    <p>
-                      Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                    </p>
-                  </div>
-                  <div class="show service-content-2">
-                    <h3>Гарантия</h3>
-                    <p>
-                      Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-                    </p>
-                  </div>
-                  <div class="show service-content-3">
-                    <h3>Кредит</h3>
-                    <p>
-                      Залезть в долговую яму стало проще!
-                    </p>
-                    <p>
-                      Кредитные констультанты придут вам на помощь.
-                    </p>
-                    <a class="btn" href="#">Отправить заявку</a>
-                  </div>
+                <div>
+                  <input type="radio" name="service-item" id="service-2">
+                  <label for="service-2">Гарантия</label>
                 </div>
+                <div>
+                  <input type="radio" name="service-item" id="service-3">
+                  <label for="service-3">Кредит</label>
+                </div>
+            </div>
+            <div class="services-content">
+              <div class="show service-content-1">
+                <h3>Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
               </div>
+              <div class="show service-content-2">
+                <h3>Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                </p>
+              </div>
+              <div class="show service-content-3">
+                <h3>Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще!
+                </p>
+                <p>
+                  Кредитные констультанты придут вам на помощь.
+                </p>
+                <a class="btn" href="#">Отправить заявку</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="wrapper-bg-light">
-          <div class="container">
-            <div class="company-info">
-              <div class="about">
-                  <h2>КОМПАНИЯ «Техномарт»</h2>
-                  <p>
-Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
-                  </p>
-                  <p>
-                    Мы можем доставить ваш товар в самые отдаленные точки России!
-Техномарт работает со многими транспортными компаниями:
-                  </p>
-                  <ul>
-                    <li>
-                      Деловые линии
-                    </li>
-                    <li>
-                      Автотрейдинг
-                    </li>
-                    <li>
-                      ЖелДорЭкспедиция
-                    </li>
-                  </ul>
-                  <a class="btn" href="#">Подробнее о компании</a>
-              </div>
-              <div class="contacts">
-                <h2>Контакты</h2>
+          <div class="container company-info">
+            <div class="about">
+                <h2>КОМПАНИЯ «Техномарт»</h2>
                 <p>
-                  Вы можете забрать товар сами, <br>заехав в наш офис:
+Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
                 </p>
-                <img src="http://placehold.it/302x162" width="302" height="162" alt="карта" >
-                <a class="btn feedback" href="#">Заблудились? Напишите нам!</a>
-              </div>
+                <p>
+                  Мы можем доставить ваш товар в самые отдаленные точки России!
+Техномарт работает со многими транспортными компаниями:
+                </p>
+                <ul>
+                  <li>
+                    Деловые линии
+                  </li>
+                  <li>
+                    Автотрейдинг
+                  </li>
+                  <li>
+                    ЖелДорЭкспедиция
+                  </li>
+                </ul>
+                <a class="btn" href="#">Подробнее о компании</a>
+            </div>
+            <div class="contacts">
+              <h2>Контакты</h2>
+              <p>
+                Вы можете забрать товар сами, <br>заехав в наш офис:
+              </p>
+              <img src="img/map.jpg" width="302" height="162" alt="карта" >
+              <a class="btn feedback" href="#">Заблудились? Напишите нам!</a>
             </div>
           </div>
         </div>
@@ -284,7 +295,7 @@
       <footer class="main-footer">
         <div class="wrapper-bg-blue">
           <div class="container">
-            <a class="logo" href="#">Техномарт</a>
+            <a class="logo" href="#"><img src="img/logo-footer.png" width="220" height="68" alt=""></a>
             <nav class="footer-menu-1">
               <ul>
                 <li>
@@ -328,11 +339,10 @@
                 </li>
               </ul>
             </nav>
-
           </div>
         </div>
         <div class="wrapper-bg-darkblue">
-          <div class="container">
+          <div class="container col-x3">
             <section class="footer-copyright">
               <p>
                 &copy;2010-2016 Компания Техномарт<br>
@@ -344,14 +354,16 @@
               <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
               <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </section>
-            <section>
-              <p>Обратная связь:</p>
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </section>
-            <section>
-              <p>Разработано:</p>
-              <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-            </section>
+            <div>
+              <section class="feedback-link">
+                <p>Обратная связь:</p>
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </section>
+              <section class="feedback-link">
+                <p>Разработано:</p>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+              </section>
+            </div>
           </div>
         </div>
       </footer>
