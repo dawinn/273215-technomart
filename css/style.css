@@ -213,8 +213,8 @@ h3 {
   height: 144px;
 }
 
-.popgoods-item:nth-child(4n),
-.producers-item:nth-child(4n) {
+.viewed .popgoods-item:nth-child(4n),
+.viewed .producers-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -364,11 +364,76 @@ h3 {
   width: 140px;
   display: inline-block;
 }
+
+/*===========================================================
+ Внутренная страница
+============================================================*/
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+
+  background-color: #f2f6f8;
+}
+
+.filter-widget {
+  width: 220px;
+  float:left;
+}
+
+.filter-widget h3,
+.sort h3 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.sort a {
+  position: relative;
+  top: -32px;
+  left: 150px;
+}
+.content-page {
+  width: 700px;
+  float: right;
+}
+.content-page .popgoods-item:nth-child(3n) {
+  margin-right: 0;
+}
+.content-page .popgoods-list {
+  margin-bottom: 50px;
+}
+
+.pagination a {
+
+  padding: 13px;
+  box-shadow: inset 0 0 0 1px #e5e5e5;
+}
 /*===========================================================
  Системное оформление - не изменять взято из демки вебинара
 ============================================================*/
-
 /*
+
 body > * {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
