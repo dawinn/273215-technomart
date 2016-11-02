@@ -424,6 +424,9 @@ h1 {
   margin-bottom: 50px;
 }
 
+.pagination {
+  margin-bottom: 60px;
+}
 .pagination a {
 
   padding: 13px;
