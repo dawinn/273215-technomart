@@ -49,33 +49,44 @@ h3 {
 .wrapper-bg-blue {
   background-color: #32425c;
 }
+
 .col-x3 > div,
 .col-x3 > section {
   width: 300px;
   float: left;
   margin-right:20px;
 }
-.col-x3 div:nth-child(3n) {
+.col-x3 div:nth-child(3n),
+.col-x3 > section:nth-child(3n) {
   margin-right: 0;
 }
 
 /*===========================================================
- Шапка
+ main-header
 ============================================================*/
-.main-header .logo {
-  position: absolute;
-  z-index: 10;
-}
+
 .search {
-  float: left;
-  margin-left: 220px;
   width: 270px;
 }
-.bookmarks,
-.cart-widget,
-.btn-order {
-  float: right;
+
+.top-inline-block{
+  font-size: 0;
 }
+.top-inline-block > div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+}
+
+.top-right-widget {
+  float: right;
+  margin-top: -46px;
+}
+
+.top-right-widget div {
+  float: left;
+}
+
 .main-menu {
   float: none;
   width: 940px;
