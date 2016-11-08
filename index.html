@@ -3,44 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
         <div class="wrapper-bg-darkblue">
-          <div class="container">
-            <div class="top-inline-block">
-              <div class="logo">
-                <img src="img/logo.png" width="220" height="47" alt="">
-              </div>
-              <div>
-                <form class="search" action="" method="post">
-                  <input type="search" name="search-str" placeholder="Поиск:" >
-                </form>
-              </div>
-
+          <div class="container top-inline-block">
+            <div class="logo">
+              <img src="img/logo-header.png" width="110" height="18" alt="">
             </div>
-            <div class="top-right-widget">
-              <div class="bookmarks">
-                Закладки: 0
-              </div>
-              <div class="cart-widget">
-                Корзина: 0
-              </div>
-              <div>
-                <a class="btn-order" href="#">Оформить заказ</a>
-              </div>
+            <div >
+              <form class="search" action="" method="post">
+                <input type="search" name="search-str" id="search-str" placeholder="Поиск:" >
+                <label for="search-str">Поиск:</label>
+              </form>
+            </div>
+            <div class="bookmarks">
+              Закладки: 0
+            </div>
+            <div class="cart-widget">
+              Корзина: 0
+            </div>
+            <div class="btn-order">
+              <a class="" href="#">Оформить заказ</a>
             </div>
           </div>
         </div>
         <div class="wrapper-bg-lightblue">
-          <div class="container col-x3">
+          <div class="container col-x3 ">
             <div class="tagline">
               <p>
-                Интернет-магазин строительных материалов и инструментов для ремонта
+                Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
               </p>
             </div>
-            <div class="contact">
+            <div class="header-contact">
               <a class="contact-phone" href="tel:+7(812)555-05-55" >
                 +7 (812) 555-05-55
               </a>
@@ -50,7 +48,7 @@
             </div>
             <div class="auth-block">
               <a class="auth-link" href="#">Войти</a>
-              <a class="registration" href="#">Регистрация</a>
+              <a class="auth-reg" href="#">Регистрация</a>
             </div>
             <nav class="main-menu">
               <ul>
