@@ -7,3 +7,7 @@ Thumbs.db
 *.psd
 *.ai
 *.pdf
+img2/*
+css/ico.css
+css/new_style.css
+tmp_content.html
