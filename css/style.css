@@ -662,7 +662,7 @@ a.btn:active {
   position: absolute;
   width: 575px;
   font-size: 0;
-  top: 115px;
+  top: 124px;
 }
 .slider-control a {
   width: 22px;
@@ -671,6 +671,29 @@ a.btn:active {
   font-size: 0;
   background-color: transparent;
   background-repeat: no-repeat;
+}
+.slider-control .prev,
+.slider-control .next {
+  position: relative;
+}
+.slider-control .prev::before,
+.slider-control .prev::after,
+.slider-control .next::before,
+.slider-control .next::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+.slider-control .prev::before,
+.slider-control .next::after {
+  transform: rotate(-45deg);
+}
+.slider-control .prev::after,
+.slider-control .next::after {
+  top: 19px;
 }
 .slider-control .prev:hover,
 .slider-control .next:hover {
@@ -684,11 +707,9 @@ a.btn:active {
 }
 .slider-control .prev{
   float: left;
-  background-image: url("../img/ico-left.png");
 }
 .slider-control .next{
   float: right;
-  background-image: url("../img/ico-right.png");
 }
 
 
