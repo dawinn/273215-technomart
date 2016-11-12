@@ -109,7 +109,13 @@
               <legend class="fieldset-caption">
                 Цена:
               </legend>
-              <div class="range-runner"></div>
+              <div class="range-runner">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>                
+              </div>
               <input type="text" name="price-min-border" id="id-price-min" value="0">
               <span class="mdash-code">&mdash;</span>
               <input type="text" name="price-max-border" id="id-price-max" value="30000">
@@ -361,6 +367,15 @@
       </div>
     </div>
   </footer>
+  <div class="modal-content-incart">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <b>Товар добавлен в корзину!</b>
+    <div class="wrapper-bg-grey">
+      <a class="btn" href="#">Оформить заказ</a>
+      <button class="btn btn-close" type="button" >Продолжить покупки</button>
+    </div>
+  </div>
+  <div class="modal-overlay"></div>
 </body>
 
 </html>
