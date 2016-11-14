@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -15,7 +16,7 @@
               <img src="img/logo-header.png" width="110" height="18" alt="">
             </div>
             <div>
-              <form class="search" action="" method="post">
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
                 <input type="search" name="search-str" id="search-str" placeholder="Поиск:" >
                 <label for="search-str">Поиск:</label>
               </form>
@@ -96,19 +97,33 @@
                 <a href="#">На любой вкус</a>
               </div>
               <div class="promo-item slider">
-                <!-- TODO: Тут будет слайдер -->
-                <figure class="slider-list">
-                  <figcaption class="img-caption">
-                    <h3>Перфораторы</h3>
-                    <p>Настоящие мужские игрушки</p>
-                    <a class="btn" href="#">Открыть каталог</a>
-                  </figcaption>
-                  <img src="img/slide-1.jpg" width="620" height="266" alt="" >
-                </figure>
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
                 <div class="slider-control">
+                  <label for="btn-1"></label>
+                  <label for="btn-2"></label>
                   <a class="prev" href="#">Назад</a>
                   <a class="next" href="#">Вперед</a>
                 </div>
+                <div class="slider-list">
+                  <div class="slide">
+                    <div class="slide-text">
+                      <h3>Перфораторы</h3>
+                      <p>Настоящие мужские игрушки</p>
+                      <a class="btn" href="inner.html">Открыть каталог</a>
+                    </div>
+
+                  </div>
+                  <div class="slide">
+                    <div class="slide-text">
+                      <h3>Дрели</h3>
+                      <p>Соседям на радость</p>
+                      <a class="btn" href="#">Открыть каталог</a>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
               <div class="promo-item discounts">
                 <h3>Скидки 50%</h3>
@@ -180,42 +195,42 @@
               <section class="producers-list clearfix">
                 <div class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/bosch.png" width="auto" height="auto" alt="Bosch" >
+                    <img src="img/bosch.png" width="126" height="37" alt="Bosch" >
                   </a>
                 </div>
                 <div class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/makita.jpg" width="auto" height="auto" alt="Makita" >
+                    <img src="img/makita.jpg" width="123" height="40" alt="Makita" >
                   </a>
                 </div>
                 <div class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/dewalt.jpg" width="auto" height="auto" alt="DeWalt" >
+                    <img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt" >
                   </a>
                 </div>
                 <div class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/interscol.jpg" width="auto" height="auto" alt="Интерскол" >
+                    <img src="img/interscol.jpg" width="200" height="88" alt="Интерскол" >
                   </a>
                 </div>
                 <div class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/hitachi.jpg" width="auto" height="auto" alt="HITACHI" >
+                    <img src="img/hitachi.jpg" width="169" height="31" alt="HITACHI" >
                   </a>
                 </div>
                 <div class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/lg.jpg" width="auto" height="auto" alt="LG" >
+                    <img src="img/lg.jpg" width="121" height="73" alt="LG" >
                   </a>
                 </div>
                 <div  class="producers-item">
                   <a class="image" href="#">
-                    <img src="img/aeg.jpg" width="auto" height="auto" alt="AEG" >
+                    <img src="img/aeg.jpg" width="151" height="96" alt="AEG" >
                   </a>
                 </div>
                 <div class="producers-item">
                   <a class="image"  href="#">
-                    <img src="img/metabo.jpg" width="auto" height="auto" alt="Metabo" >
+                    <img src="img/metabo.jpg" width="204" height="69" alt="Metabo" >
                   </a>
                 </div>
               </section>
@@ -398,7 +413,7 @@
         </div>
       </div>
       <div class="modal-content-map">
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>        
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <div id="yandex-map"></div>
       </div>
       <div class="modal-overlay"></div>
