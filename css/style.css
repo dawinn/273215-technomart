@@ -718,7 +718,8 @@ slider
   position: absolute;
   top: 180px;
 }
-.slide-text .btn{
+.slide-text .btn,
+.btn{
   padding: 11px 45px;
 
   font-size: 14px;
@@ -731,11 +732,12 @@ slider
   border-radius: 3px;
   background-color: #ee3643;
 }
-.slide-text .btn:hover
- {
+.slide-text .btn:hover,
+.btn:hover {
   background-color: #ca2c37;
 }
-.slide-text .btn:active {
+.slide-text .btn:active,
+.btn:active {
   background-color: #ba2732;
 }
 .slide {
@@ -1664,6 +1666,19 @@ h1 {
 /*===========================================================
  Модальные формы
 ============================================================*/
+@keyframes magnific {
+  0% {transform: translate(157px, -28px) scale(0.03);}
+  10% {transform: translate(154px, -28px) scale(0.05);}
+  20% {transform:  translate(136px, -28px) scale(0.1);}
+  100%  {transform: translate(0, 0) scale(1);}
+}
+@keyframes squeeze {
+  0%, 100% {transform: scale(1);}
+  10% {transform: scale(0.9);}
+  20% {transform: scale(1.1)}
+  50%, 70%, 90% {transform: scale(0.95);}
+  60%, 80% {transform: scale(1);}
+}
 .modal-content-feedback {
   display: none;
   position: absolute;
@@ -1733,6 +1748,7 @@ h1 {
 
   width: 620px;
   margin-left: -310px;
+  margin-top: -137px;
 
   color: #000000;
   background-color: #ffffff;
@@ -1745,7 +1761,7 @@ h1 {
   text-align: center;
   font-size: 30px;
   line-height: 60px;
-  padding: 50px 0;
+  margin: 50px 0;
   padding-left: 70px;
   font-family: "Cuprum", "Arial",sans-serif;
 }
@@ -1755,7 +1771,6 @@ h1 {
   width: 64px;
   height: 64px;
   left: 81px;
-  top: 48px;
 
   background-color: #63a63e;
   border-radius: 50%;
@@ -1815,6 +1830,16 @@ h1 {
   height: 100%;
 
   background: rgba(0, 0, 0, 0.2);
+}
+.overlay-show {
+  display: block;
+}
+.modal-content-show {
+  display: block;
+  animation: magnific 0.7s;
+}
+.modal-error {
+  animation: squeeze 0.5s;
 }
 .modal-content-close {
   position: absolute;
