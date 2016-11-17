@@ -66,7 +66,7 @@ h3 {
 .top-inline-block{
   font-size: 0;
 }
-.top-inline-block > div {
+.top-inline-block > * {
   display: inline-block;
   vertical-align: top;
 
@@ -190,6 +190,7 @@ h3 {
   padding: 12px 10px 12px 47px;
   box-sizing: border-box;
   width: 151px;
+  text-decoration: none;
 }
 .bookmarks.filled,
 .cart-widget.filled {
@@ -232,11 +233,9 @@ h3 {
   line-height: 18px;
   margin: 0;
 
-  background-color: #63a63e;
-}
-.btn-order a {
   color: #ffffff;
   text-decoration: none;
+  background-color: #63a63e;
 }
 .btn-order:hover {
   background-color: #5fbb2d;
@@ -593,7 +592,7 @@ h3 {
      z-index:20;
 }
 .flag-new{
-    background:url("../img/new-flag.png") no-repeat 0 0;
+    background: transparent url("../img/new-flag.png") no-repeat 0 0;
 }
 /* ============================================
 slider
@@ -977,14 +976,14 @@ slider
   padding:0;
 }
 
-.services-list {
+.services-slider {
   position: relative;
   /*width: 240px;*/
   width: 100%;
   height: 272px;
   float: left;
 }
-.services-list::after {
+.services-slider::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -994,15 +993,18 @@ slider
   background-image: url("../img/services-separate.png");
   background-repeat: no-repeat;
 }
-.services-list .top-align-middle {
+.services-slider .services-tabs {
+  float:left;
+  width: 218px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-.services-list input {
+.services-slider input:checked,
+.services-slider input:not(:checked) {
   display: none;
 }
-.services-list input + label {
+.services-tabs label {
   display: block;
   width: 218px;
   padding-left: 22px;
@@ -1018,62 +1020,65 @@ slider
   box-shadow: inset 0 1px 0 0 #405069,
   0 1px 0 0 #293449;
 }
-.services-list input:checked + label {
+
+#service-1:checked ~ .services-tabs label[for="service-1"],
+#service-2:checked ~ .services-tabs label[for="service-2"],
+#service-3:checked ~ .services-tabs label[for="service-3"],
+#service-4:checked ~ .services-tabs label[for="service-4"] {
   background-color: #ffffff;
   color: #32425c;
-  box-shadow: 0 1px 0 0 #293449;
-}
-.services-list input:checked + label:last-of-type {
   box-shadow: inset 0 1px 0 0 #405069;
 }
-.services-list input:not(:checked) + label:hover {
+#service-1:checked ~ .services-tabs label[for="service-1"] {
+  box-shadow: 0 1px 0 0 #293449;
+}
+.services-slider input:not(:checked) + label:hover {
   background-color: #293449;
   cursor: pointer;
 }
-.box-content {
+.services-slides .slide{
   display: none;
 }
 
-#service-1:checked ~ .content-1 {
+#service-1:checked ~ .services-slides .slide:nth-child(1) {
   display: block;
 }
-#service-2:checked ~ .content-2 {
+#service-2:checked ~ .services-slides .slide:nth-child(2) {
   display: block;
 }
-#service-3:checked ~ .content-3 {
+#service-3:checked ~ .services-slides .slide:nth-child(3) {
   display: block;
 }
-.box-content {
+.services-slides {
   position: relative;
+  float: right;
   width: 380px;
   padding-right: 240px;
-  float: right;
-  /* TODO: надо обойти фикс маргин, на случай add/del пункта */
-  margin-top: -180px;
+
 }
-.box-content h3 {
+.services-slides h3 {
   margin-top:0;
   margin-bottom: 25px;
 }
-.box-content p {
+.services-slides p {
   margin: 0;
 }
-.box-content p:last-of-type{
+.services-slides p:last-of-type{
   margin-bottom: 30px;
 }
-.box-content.content-1 {
+.services-slides .slide:nth-child(1) {
   min-height: 261px;
   background-image: url(../img/services-car.png);
   background-repeat: no-repeat;
   background-position: 152px 0;
 }
-.box-content.content-2 {
+.services-slides .slide:nth-child(2) {
   min-height: 280px;
   background-image: url(../img/services-warranty.png);
   background-repeat: no-repeat;
   background-position: 232px 0;
 }
-.box-content.content-3 {
+.services-slides .slide:nth-child(3) {
   min-height: 280px;
   background-image: url(../img/services-credit.png);
   background-repeat: no-repeat;

@@ -12,24 +12,20 @@
       <header class="main-header">
         <div class="wrapper-bg-darkblue">
           <div class="container top-inline-block">
-            <div class="logo">
+            <a class="logo">
               <img src="img/logo-header.png" width="110" height="18" alt="">
-            </div>
-            <div>
-              <form class="search" action="https://echo.htmlacademy.ru" method="post">
+            </a>
+            <form class="search" action="https://echo.htmlacademy.ru" method="post">
                 <input type="search" name="search-str" id="search-str" placeholder="Поиск:" >
                 <label for="search-str">Поиск:</label>
               </form>
-            </div>
-            <div class="bookmarks">
+            <a class="bookmarks">
               Закладки: 0
-            </div>
-            <div class="cart-widget">
+            </a>
+            <a class="cart-widget">
               Корзина: 0
-            </div>
-            <div class="btn-order">
-              <a class="" href="#">Оформить заказ</a>
-            </div>
+            </a>
+            <a class="btn-order" href="#">Оформить заказ</a>
           </div>
         </div>
         <div class="wrapper-bg-lightblue">
@@ -54,13 +50,13 @@
             <nav class="main-menu">
               <ul>
                 <li>
-                  <a href="#">Главная</a>
+                  <a >Главная</a>
                 </li>
                 <li>
                   <a href="#">Компания</a>
                 </li>
                 <li>
-                  <a href="#">Каталог</a>
+                  <a href="inner.html">Каталог</a>
                 </li>
                 <li>
                   <a href="#">Новости</a>
@@ -248,37 +244,41 @@
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
             </div>
-            <div class="services-list">
-                <div class="top-align-middle">
-                  <input type="radio" name="service-item" id="service-1" value="1" checked="checked">
-                  <label for="service-1">Доставка</label>
-                  <input type="radio" name="service-item" id="service-2" value="2">
-                  <label for="service-2">Гарантия</label>
-                  <input type="radio" name="service-item" id="service-3" value="3">
-                  <label for="service-3">Кредит</label>
-                  <div class="box-content content-1">
-                    <h3>Доставка</h3>
-                    <p>
-                      Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                    </p>
-                  </div>
-                  <div class="box-content content-2">
-                    <h3>Гарантия</h3>
-                    <p>
-                      Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-                    </p>
-                  </div>
-                  <div class="box-content content-3">
-                    <h3>Кредит</h3>
-                    <p>
-                      Залезть в долговую яму стало проще!
-                    </p>
-                    <p>
-                      Кредитные констультанты придут вам на помощь.
-                    </p>
-                    <a class="btn" href="#">Отправить заявку</a>
-                  </div>
+            <div class="services-slider">
+              <input type="radio" name="service-item" id="service-1" value="1" checked="checked">
+              <input type="radio" name="service-item" id="service-2" value="2">
+              <input type="radio" name="service-item" id="service-3" value="3">
+              <!-- <input type="radio" name="service-item" id="service-4" value="4"> -->
+              <div class="services-tabs">
+                <label for="service-1">Доставка</label>
+                <label for="service-2">Гарантия</label>
+                <label for="service-3">Кредит</label>
+                <!-- <label for="service-4">Кредит</label> -->
+              </div>
+              <div class="services-slides">
+                <div class="slide">
+                  <h3>Доставка</h3>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  </p>
                 </div>
+                <div class="slide">
+                  <h3>Гарантия</h3>
+                  <p>
+                    Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                  </p>
+                </div>
+                <div class="slide">
+                  <h3>Кредит</h3>
+                  <p>
+                    Залезть в долговую яму стало проще!
+                  </p>
+                  <p>
+                    Кредитные констультанты придут вам на помощь.
+                  </p>
+                  <a class="btn" href="#">Отправить заявку</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -414,7 +414,7 @@
       </div>
       <div class="modal-content-map">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.3208946158674!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479190695060" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.3208946158674!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479190695060" width="940" height="446" allowfullscreen></iframe>
       </div>
       <div class="modal-content-incart">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
