@@ -634,11 +634,13 @@ slider
   width: 28px;
   height: 3px;
   background-color: #ffffff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .slider-control .prev::before,
 .slider-control .next::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .slider-control .prev::after,
 .slider-control .next::after {
@@ -943,7 +945,8 @@ slider
     position: relative;
     margin: 0 auto;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .image img {
     max-width: 100%;
@@ -998,7 +1001,8 @@ slider
   width: 218px;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .services-slider input:checked,
 .services-slider input:not(:checked) {
@@ -1189,11 +1193,13 @@ ul.style-redline li::before {
   left: 12px;
 
   background-color: #cdd1d8;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .breadcrumbs li + li::after {
   top: 11px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .breadcrumbs li:first-of-type a{
   display: block;
@@ -1375,7 +1381,8 @@ h1 {
               -7px 7px 0px 0px #c1c1c0,
               -5px 7px 0px 2px #ffffff;
   border-top-color: transparent;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .fieldset-block input[type="radio"]:checked + label::after {
   width: 8px;
@@ -1671,18 +1678,31 @@ h1 {
 /*===========================================================
  Модальные формы
 ============================================================*/
+@-webkit-keyframes magnific {
+  0% {-webkit-transform: translate(157px, -28px) scale(0.03);transform: translate(157px, -28px) scale(0.03);}
+  10% {-webkit-transform: translate(154px, -28px) scale(0.05);transform: translate(154px, -28px) scale(0.05);}
+  20% {-webkit-transform:  translate(136px, -28px) scale(0.1);transform:  translate(136px, -28px) scale(0.1);}
+  100%  {-webkit-transform: translate(0, 0) scale(1);transform: translate(0, 0) scale(1);}
+}
 @keyframes magnific {
-  0% {transform: translate(157px, -28px) scale(0.03);}
-  10% {transform: translate(154px, -28px) scale(0.05);}
-  20% {transform:  translate(136px, -28px) scale(0.1);}
-  100%  {transform: translate(0, 0) scale(1);}
+  0% {-webkit-transform: translate(157px, -28px) scale(0.03);transform: translate(157px, -28px) scale(0.03);}
+  10% {-webkit-transform: translate(154px, -28px) scale(0.05);transform: translate(154px, -28px) scale(0.05);}
+  20% {-webkit-transform:  translate(136px, -28px) scale(0.1);transform:  translate(136px, -28px) scale(0.1);}
+  100%  {-webkit-transform: translate(0, 0) scale(1);transform: translate(0, 0) scale(1);}
+}
+@-webkit-keyframes squeeze {
+  0%, 100% {-webkit-transform: scale(1);transform: scale(1);}
+  10% {-webkit-transform: scale(0.9);transform: scale(0.9);}
+  20% {-webkit-transform: scale(1.1);transform: scale(1.1)}
+  50%, 70%, 90% {-webkit-transform: scale(0.95);transform: scale(0.95);}
+  60%, 80% {-webkit-transform: scale(1);transform: scale(1);}
 }
 @keyframes squeeze {
-  0%, 100% {transform: scale(1);}
-  10% {transform: scale(0.9);}
-  20% {transform: scale(1.1)}
-  50%, 70%, 90% {transform: scale(0.95);}
-  60%, 80% {transform: scale(1);}
+  0%, 100% {-webkit-transform: scale(1);transform: scale(1);}
+  10% {-webkit-transform: scale(0.9);transform: scale(0.9);}
+  20% {-webkit-transform: scale(1.1);transform: scale(1.1)}
+  50%, 70%, 90% {-webkit-transform: scale(0.95);transform: scale(0.95);}
+  60%, 80% {-webkit-transform: scale(1);transform: scale(1);}
 }
 .modal-content-feedback {
   display: none;
@@ -1788,7 +1808,8 @@ h1 {
   left: 104px;
 
   box-shadow: 7px 7px 0 0 #ffffff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .modal-content-incart .btn {
   width: 220px;
@@ -1841,10 +1862,12 @@ h1 {
 }
 .modal-content-show {
   display: block;
-  animation: magnific 0.7s;
+  -webkit-animation: magnific 0.7s;
+          animation: magnific 0.7s;
 }
 .modal-error {
-  animation: squeeze 0.5s;
+  -webkit-animation: squeeze 0.5s;
+          animation: squeeze 0.5s;
 }
 .modal-content-close {
   position: absolute;
@@ -1875,9 +1898,11 @@ h1 {
 }
 
 .modal-content-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-content-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
