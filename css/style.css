@@ -1042,6 +1042,10 @@ slider
 }
 .services-slides .slide{
   display: none;
+
+  width: 340px;
+  padding-right: 280px;
+  margin-top: 43px;
 }
 
 #service-1:checked ~ .services-slides .slide:nth-child(1) {
@@ -1056,13 +1060,12 @@ slider
 .services-slides {
   position: relative;
   float: right;
-  width: 380px;
-  padding-right: 240px;
-
+  width: 620px;
 }
 .services-slides h3 {
   margin-top:0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 .services-slides p {
   margin: 0;
@@ -1074,7 +1077,7 @@ slider
   min-height: 261px;
   background-image: url(../img/services-car.png);
   background-repeat: no-repeat;
-  background-position: 152px 0;
+  background-position: 152px 22px;
 }
 .services-slides .slide:nth-child(2) {
   min-height: 280px;
@@ -1618,7 +1621,10 @@ h1 {
   margin-left: 2px;
   font-size: 18px;
 }
-
+.contact-phone {
+  color: #ffffff;
+  text-decoration: none;
+}
 .footer-copyright,
 .footer-social,
  .feedback-link{
