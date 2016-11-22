@@ -1075,6 +1075,9 @@ slider
   width: 100%;
   margin-top: 29px;
   padding-top: 43px;
+  display: table;
+  clear: both;
+  margin-bottom: 43px;
 }
 
 .services-slider::after {
@@ -1157,7 +1160,6 @@ slider
   position: relative;
   width: 340px;
   padding-right: 280px;
-  min-height: 230px;
 }
 
 #service-1:checked~.services-slides .slide:nth-child(1) {
