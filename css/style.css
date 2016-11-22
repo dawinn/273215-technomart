@@ -1073,6 +1073,7 @@ slider
 .services-slider {
   position: relative;
   width: 100%;
+  margin-top: 29px;
   padding-top: 43px;
 }
 
@@ -1091,7 +1092,6 @@ slider
   float: left;
   width: 218px;
   position: relative;
-  margin-top: 25px;
 }
 
 .services-slider input:checked, .services-slider input:not(:checked) {
@@ -1136,7 +1136,6 @@ slider
   position: relative;
   float: right;
   width: 620px;
-  margin-top: 25px;
 }
 
 .services-slides h3 {
