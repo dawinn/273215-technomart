@@ -1083,7 +1083,7 @@ slider
   padding-top: 43px;
   display: table;
   clear: both;
-  margin-bottom: -60px;
+  margin-bottom: -32px;
 }
 
 .services-slider::after {
@@ -1157,8 +1157,9 @@ slider
   margin: 0;
 }
 
-.services-slides *:last-of-type {
-  margin-bottom: 28px;
+.services-slides .btn {
+  float: left;
+  margin: 24px 0;
 }
 
 .services-slides .slide {
